@@ -43,49 +43,48 @@
         </thead>
         
         <tbody>
-            <tr>
                 <th scope="row" >9AM</th>
-                <td class="test"><textarea rows="1" cols="60"></textarea></td>
+                <td class="test"><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td class="save"><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row" class="hour">10AM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">11AM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">12PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">1PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">2PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">3PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">4PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
             <tr>
                 <th scope="row">5PM</th>
-                <td><textarea rows="1" cols="60"></textarea></td>
+                <td><textarea rows="4" cols="90" maxlength="100"></textarea></td>
                 <td><button type="button" class="btn btn-primary saveBtn">save</button></td>
             </tr>
         </tbody>
@@ -103,6 +102,16 @@
 
     
     <script src="script.js"></script>
+    <script src="moment.js"></script>
+    
+    <script>
+      var currentTime = moment().format("dddd, MMMM Do YYYY, h:mma")
+      var h5El=$("<h5>")
+        h5El.text(currentTime)
+      $("#currentDay").append(h5El)
+    </script>
+
+    
   </body>
 </html>
 

@@ -62,7 +62,7 @@ body {
     border-bottom-right-radius: 5px;
     background-color: #06AED5;
     color: white;
-    padding: 10px 20px;
+    
   }
   
   .saveBtn i:hover {
@@ -74,7 +74,13 @@ body {
 
 textarea{
   border: none;
-  width: 800px;
+  background-color: transparent;
+    resize: none;
+    outline: none;
+    overflow: none;
+      
+   font-size: 16px;   
+    
 }
 
 .test{
