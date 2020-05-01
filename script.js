@@ -3,15 +3,18 @@ getActivity();
 $(".save").on("click", saveActivity)
 
 function saveActivity () {
-savedHour= ($(this).attr("hour"));
-$("#text" + savedHour).val()
-console.log($("#text" + savedHour).val())
-if($("#text" + savedHour).val()===""){
-    alert("No activity to be saved")
+    savedHour= ($(this).attr("hour"));
+    if ($("#text" + savedHour).val()===""){
+        alert("No activity to be saved")
+    }
+    else{
+        alert("Save Successful");
+    
+    $("#text" + savedHour).val();
+    localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val());
 }
-else
-localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val())
 }
+
 
 function getActivity (){
 
@@ -59,26 +62,27 @@ var time = new Date().getHours();
         $(".color12, .color13, .color14, .color15, .color16, .color17").css("background-color", "#77dd77")
     }else if(time===12){
         $(".color12").css("background-color","#ff6961")
-        $(".color, .color10, .color11").css("background-color", "#d3d3d3")
-        $(".color13, ..color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+        $(".color9, .color10, .color11").css("background-color", "#d3d3d3")
+        $(".color13, .color14, .color15, .color16, .color17").css("background-color", "#77dd77")
     }else if(time===13){
         $(".color13").css("background-color","#ff6961")
         $(".color9, .color10, .color11, .color12").css("background-color", "#d3d3d3")
         $(".color14, .color15, .color16, .color17").css("background-color", "#77dd77")
     }else if(time===14){
         $(".color14").css("background-color","#ff6961")
-        $(".class9, .class10, .class11, .class12, .class13").css("background-color", "#d3d3d3")
-        $(".class15, .class16, .class17").css("background-color", "#77dd77")
+        $(".color9, .color10, .color11, .color12, .color13").css("background-color", "#d3d3d3")
+        $(".color15, .color16, .color17").css("background-color", "#77dd77")
     }else if(time===15){
         $(".color15").css("background-color","#ff6961")
-        $(".class9, .class10, .class11, .class12, .class13, .class14").css("background-color", "#d3d3d3")
-        $(".class16, .class17").css("background-color", "#77dd77")
+        $(".color9, .color10, .color11, .color12, .color13, .color14").css("background-color", "#d3d3d3")
+        $(".color16, .color17").css("background-color", "#77dd77")
     }else if(time===16){
         $(".color16").css("background-color","#ff6961")
-        $(".class9, .class10, .class11, .class12, .class13, .class14, .class15").css("background-color", "#d3d3d3")
-        $(".class17").css("background-color", "#77dd77")
+        $(".color9, .color10, .color11, .color12, .color13, .color14, .color15").css("background-color", "#d3d3d3")
+        $(".color17").css("background-color", "#77dd77")
     }else if(time===17){
         $(".color17").css("background-color","#ff6961")
+        $(".color9, .color10, .color11, .color12, .color13, .color14, .color15, .color16").css("background-color", "#d3d3d3")
     }else if (time>17){
         $(".a").css("background-color", "#d3d3d3")
     }
