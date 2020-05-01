@@ -44,26 +44,60 @@ function getActivity (){
 }
 
 var time = new Date().getHours();
-console.log(time)
-if(time<9){
-    $(".a").css("background-color", "#ffffff")
-}
-else if(time==9){
-    $(".color9").css("background-color","#ff6961")
-    $(".color10 , .color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background", "#77dd77")
-}else if (time==10){
-    $(".color9").css("background-color"," #d3d3d3")
-    $(".color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background", "#77dd77")
+    if(time<9){
+        $(".a").css("background-color", "#77dd77")
+    }else if(time===9){
+        $(".color9").css("background-color","#ff6961")
+        $(".color10, .color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+    }else if(time===10){
+        $(".color10").css("background-color","#ff6961")
+        $(".color9").css("background-color", "#d3d3d3")
+        $(".color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+    }else if(time===11){
+        $(".color11").css("background-color","#ff6961")
+        $(".color9, .color10").css("background-color", "#d3d3d3")
+        $(".color12, .color13, .color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+    }else if(time===12){
+        $(".color12").css("background-color","#ff6961")
+        $(".color, .color10, .color11").css("background-color", "#d3d3d3")
+        $(".color13, ..color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+    }else if(time===13){
+        $(".color13").css("background-color","#ff6961")
+        $(".color9, .color10, .color11, .color12").css("background-color", "#d3d3d3")
+        $(".color14, .color15, .color16, .color17").css("background-color", "#77dd77")
+    }else if(time===14){
+        $(".color14").css("background-color","#ff6961")
+        $(".class9, .class10, .class11, .class12, .class13").css("background-color", "#d3d3d3")
+        $(".class15, .class16, .class17").css("background-color", "#77dd77")
+    }else if(time===15){
+        $(".color15").css("background-color","#ff6961")
+        $(".class9, .class10, .class11, .class12, .class13, .class14").css("background-color", "#d3d3d3")
+        $(".class16, .class17").css("background-color", "#77dd77")
+    }else if(time===16){
+        $(".color16").css("background-color","#ff6961")
+        $(".class9, .class10, .class11, .class12, .class13, .class14, .class15").css("background-color", "#d3d3d3")
+        $(".class17").css("background-color", "#77dd77")
+    }else if(time===17){
+        $(".color17").css("background-color","#ff6961")
+    }else if (time>17){
+        $(".a").css("background-color", "#d3d3d3")
+    }
 
+
+
+
+
+    $(".clear").on("click", deleteActivity)
    
+    function deleteActivity(){
+        localStorage.removeItem("activity9AM")
+    }
 
 
 
 
 
 
-
-console.log($(".color10").attr("data"))
 
 // function saveActivity9AM(){
 //     var text9AM = $("#text9AM").val();
