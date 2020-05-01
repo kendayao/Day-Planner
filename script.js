@@ -45,17 +45,25 @@ function getActivity (){
 
 var time = new Date().getHours();
 console.log(time)
-if(time>17){
-    $(".color").css("background-color", "white")
-
-}else if (time===9 || time===10) {
-
+if(time<9){
+    $(".a").css("background-color", "#ffffff")
 }
+else if(time==9){
+    $(".color9").css("background-color","#ff6961")
+    $(".color10 , .color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background", "#77dd77")
+}else if (time==10){
+    $(".color9").css("background-color"," #d3d3d3")
+    $(".color11, .color12, .color13, .color14, .color15, .color16, .color17").css("background", "#77dd77")
+
+   
 
 
 
 
 
+
+
+console.log($(".color10").attr("data"))
 
 // function saveActivity9AM(){
 //     var text9AM = $("#text9AM").val();
