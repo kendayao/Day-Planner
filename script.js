@@ -5,43 +5,33 @@ $(".save").on("click", saveActivity)
 function saveActivity () {
     savedHour= ($(this).attr("hour"));
     if ($("#text" + savedHour).val()===""){
-        alert("No activity to be saved")
-    }
+    alert("No activity to be saved")
+        }
     else{
         alert("Save Successful");
-    
-    $("#text" + savedHour).val();
-    localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val());
-}
-}
+        $("#text" + savedHour).val();
+        localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val());
+        }
+    }
 
 
 function getActivity (){
-
     var activity9AM =localStorage.getItem("activity9AM")
     $("#text9AM").text(activity9AM)
-
     var activity10AM =localStorage.getItem("activity10AM")
     $("#text10AM").text(activity10AM)
-
     var activity11AM =localStorage.getItem("activity11AM")
     $("#text11AM").text(activity11AM)
-
     var activity12PM =localStorage.getItem("activity12PM")
     $("#text12PM").text(activity12PM)
-
     var activity1PM =localStorage.getItem("activity1PM")
     $("#text1PM").text(activity1PM)
-
     var activity2PM =localStorage.getItem("activity2PM")
     $("#text2PM").text(activity2PM)
-
     var activity3PM =localStorage.getItem("activity3PM")
     $("#text3PM").text(activity3PM)
-
     var activity4PM =localStorage.getItem("activity4PM")
     $("#text4PM").text(activity4PM)
-
     var activity5PM =localStorage.getItem("activity5PM")
     $("#text5PM").text(activity5PM) 
 }
@@ -87,14 +77,18 @@ var time = new Date().getHours();
         $(".a").css("background-color", "#d3d3d3")
     }
 
-
-
-
-
-    $(".clear").on("click", deleteActivity)
-   
+     $(".clear").on("click", deleteActivity)
     function deleteActivity(){
         localStorage.removeItem("activity9AM")
+        localStorage.removeItem("activity10AM")
+        localStorage.removeItem("activity11AM")
+        localStorage.removeItem("activity12PM")
+        localStorage.removeItem("activity1PM")
+        localStorage.removeItem("activity2PM")
+        localStorage.removeItem("activity3PM")
+        localStorage.removeItem("activity4PM")
+        localStorage.removeItem("activity5PM")
+        $("textarea").empty();
     }
 
 
@@ -103,33 +97,3 @@ var time = new Date().getHours();
 
 
 
-// function saveActivity9AM(){
-//     var text9AM = $("#text9AM").val();
-//     localStorage.setItem("activity9AM", text9AM)
-//    }
-   
-
-
-//    $(".save10").on("click", saveActivity10AM)
-
-
-//    function saveActivity10AM(){
-//        var text10AM = $("#text10AM").val();
-//        localStorage.setItem("activity10AM", text10AM)
-//       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var savedHour= ($(this).attr("hour"));
-// var text = $("#text" + savedHour).val();

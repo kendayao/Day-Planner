@@ -83,12 +83,13 @@
                 <td class="a color17"><textarea id="text5PM" rows="4" cols="90" maxlength="200"></textarea></td>
                 <td><button type="button" hour="5PM" class="btn btn-primary saveBtn save"><i class="fas fa-save"></i>Save</button></td>
             </tr>
-           
+            
         </tbody>
+        
     </table>
-
+    
     </div >
-
+    
 
     <div id="clearbutton">
       <button class="clear" type="button">Clear All Activities</button>
@@ -103,7 +104,7 @@
     <script src="moment.js"></script>
     
     <script>
-      var currentTime = moment().format("dddd, MMMM Do YYYY, h:mma")
+      var currentTime = moment().format("dddd, MMMM Do YYYY")
       var h5El=$("<h5>")
         h5El.text(currentTime)
       $("#currentDay").append(h5El)
@@ -115,75 +116,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col-4">TIME</th>
-      <th scope="col-4">ACTIVITY</th>
-      <th scope="col-4">BUTTON</th>
-    </tr>
-  </thead>
-  
-  <tbody>
-    <tr>
-      <th scope="row" class="row">0900</th>
-          <td>activity0900</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1000</th>
-          <td>activity1000</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1100</th>
-      <td>activity1100</td>
-      <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1200</th>
-          <td>activity1200</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1300</th>
-          <td>activity1300</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1400</th>
-          <td>activity1400</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1500</th>
-          <td>activity1500</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1600</th>
-          <td>activity1600</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-    <tr>
-      <th scope="row">1700</th>
-          <td>activity1700</td>
-          <td><button type="button" class="btn btn-primary">save</button></td>
-    </tr>
-  </tbody> -->

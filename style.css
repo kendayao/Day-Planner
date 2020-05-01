@@ -21,13 +21,7 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
-  
-  
 
- 
-
-  
   .saveBtn {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -50,16 +44,16 @@ body {
   margin-right: 6px;
 }
 
-
-
 .clear{
   background-color: #DBDBDB;
   border-radius: 8px;
+  margin-top: 2%;
   margin-bottom: 5%;
   padding: 5px;
+  margin-right: auto;
 }
 
 #clearbutton{
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
