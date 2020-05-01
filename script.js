@@ -1,28 +1,8 @@
-
 getActivity();
 
 $(".save").on("click", saveActivity)
 
-
-// function saveActivity9AM(){
-//     var text9AM = $("#text9AM").val();
-//     localStorage.setItem("activity9AM", text9AM)
-//    }
-   
-
-
-//    $(".save10").on("click", saveActivity10AM)
-
-
-//    function saveActivity10AM(){
-//        var text10AM = $("#text10AM").val();
-//        localStorage.setItem("activity10AM", text10AM)
-//       }
-
-
-
 function saveActivity () {
-    
 savedHour= ($(this).attr("hour"));
 $("#text" + savedHour).val()
 console.log($("#text" + savedHour).val())
@@ -32,8 +12,6 @@ if($("#text" + savedHour).val()===""){
 else
 localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val())
 }
-
-
 
 function getActivity (){
 
@@ -65,6 +43,12 @@ function getActivity (){
     $("#text5PM").text(activity5PM) 
 }
 
+var time = new Date().getHours();
+console.log(time)
+if(time>17){
+    $(".test").css("color", "red");
+    
+}
 
 
 
@@ -72,7 +56,20 @@ function getActivity (){
 
 
 
+// function saveActivity9AM(){
+//     var text9AM = $("#text9AM").val();
+//     localStorage.setItem("activity9AM", text9AM)
+//    }
+   
 
+
+//    $(".save10").on("click", saveActivity10AM)
+
+
+//    function saveActivity10AM(){
+//        var text10AM = $("#text10AM").val();
+//        localStorage.setItem("activity10AM", text10AM)
+//       }
 
 
 
