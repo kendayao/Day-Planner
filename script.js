@@ -46,10 +46,11 @@ function getActivity (){
 var time = new Date().getHours();
 console.log(time)
 if(time>17){
-    $(".test").css("color", "red");
-    
-}
+    $(".color").css("background-color", "white")
 
+}else if (time===9 || time===10) {
+
+}
 
 
 
