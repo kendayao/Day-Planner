@@ -92,7 +92,7 @@ var time = new Date().getHours();
         localStorage.removeItem("activity3PM")
         localStorage.removeItem("activity4PM")
         localStorage.removeItem("activity5PM")
-        $("textarea").empty();
+        location.reload();
     }
 
 
