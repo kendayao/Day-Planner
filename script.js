@@ -14,7 +14,6 @@ function saveActivity () {
         }
     }
 
-
 function getActivity (){
     var activity9AM =localStorage.getItem("activity9AM")
     $("#text9AM").text(activity9AM)

@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Jquery Link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- CSS style sheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome link -->
     <script src="https://kit.fontawesome.com/e63fe9faf5.js" crossorigin="anonymous"></script>
     <title>Work Day Scheduler</title>
   </head>
 
 
   <body>
+    <!-- Header Section -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-
-
-
+    <!-- Table Section -->
     <div class="container">
-      <!-- Timeblocks go here -->
       <table class="table table-bordered">
-        
         <thead>
             <tr>
                 <th scope="col-4">TIME</th>
@@ -37,7 +35,6 @@
                 <th scope="col-4">BUTTON</th>
             </tr>
         </thead>
-        
         <tbody>
                 <th scope="row">9AM</th>
                 <td class="a color9" hour="9"><textarea id="text9AM" rows="3" cols="90" maxlength="200"></textarea></td>
@@ -83,26 +80,18 @@
                 <td class="a color17"><textarea id="text5PM" rows="4" cols="90" maxlength="200"></textarea></td>
                 <td><button type="button" hour="5PM" class="btn btn-primary saveBtn save"><i class="fas fa-save"></i>Save</button></td>
             </tr>
-            
         </tbody>
-        
     </table>
-    
-    </div >
-    
-
-    <div id="clearbutton">
-      <button class="clear" type="button">Clear All Activities</button>
-    </div>
-
-    
-
-
-
-    
+  </div >
+    <!-- Clear Button  -->
+  <div id="clearbutton">
+    <button class="clear" type="button">Clear All Activities</button>
+  </div>
+    <!-- Javascript Source -->
     <script src="script.js"></script>
+  <!-- Moment.js Source -->
     <script src="moment.js"></script>
-    
+    <!-- Script to display Date and Time on HTML page using moment.js -->
     <script>
       var currentTime = moment().format("dddd, MMMM Do YYYY")
       var h5El=$("<h5>")
