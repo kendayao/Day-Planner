@@ -1,19 +1,22 @@
+// run getActivity function to save activity once button save button is clicked
 getActivity();
-
 $(".save").on("click", saveActivity)
 
 function saveActivity () {
+    // saves text based on which save button was clicked
     savedHour= ($(this).attr("hour"));
     if ($("#text" + savedHour).val()===""){
+    // checks to see if there is text to save
     alert("No activity to be saved")
         }
     else{
+        // save to local storage
         alert("Save Successful");
         $("#text" + savedHour).val();
         localStorage.setItem("activity"+savedHour, $("#text" + savedHour).val());
         }
     }
-
+    // get any saved activites from local storage and displays on page
 function getActivity (){
     var activity9AM =localStorage.getItem("activity9AM")
     $("#text9AM").text(activity9AM)
@@ -35,6 +38,7 @@ function getActivity (){
     $("#text5PM").text(activity5PM) 
 }
 
+    // activity background color based on the current time
 var time = new Date().getHours();
     if(time<9){
         $(".a").css("background-color", "#77dd77")
@@ -76,6 +80,7 @@ var time = new Date().getHours();
         $(".a").css("background-color", "#d3d3d3")
     }
 
+    // once clear button is clicked, removes from local storage and clears text area
      $(".clear").on("click", deleteActivity)
     function deleteActivity(){
         localStorage.removeItem("activity9AM")

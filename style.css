@@ -1,11 +1,12 @@
-body {
+  body {
     font-family: 'Rubik', sans-serif;
     color: #06AED5;
     font-size: 16px;
     line-height: 1;
     background-color: #FFFDF9;
   }
-  
+
+  /* text area styling */
   textarea{
     background: transparent;
     border: none;
@@ -15,14 +16,16 @@ body {
     overflow: none;
     font-size: 14px;
   }
-  
+
+  /* page header styling */
   .jumbotron {
     text-align: center;
     background-color: transparent;
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-
+  
+  /* save button styling */
   .saveBtn {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -37,24 +40,27 @@ body {
     transition: all .3s ease-in-out;
   }
   
-.activity{
+  /* center actitvity text on table */
+  .activity{
   text-align: center;
-}
+  }
 
-.fas {
+  /* fontawsome styling */
+  .fas {
   margin-right: 6px;
-}
+  }
 
-.clear{
+  /* clear button styling */
+  .clear{
   background-color: #DBDBDB;
   border-radius: 8px;
   margin-top: 2%;
   margin-bottom: 5%;
   padding: 5px;
   margin-right: auto;
-}
+  }
 
-#clearbutton{
+  #clearbutton{
   width: 100%;
   text-align: center;
-}
+  }
