@@ -65,7 +65,7 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
-Deployed application link: https://rocky-ravine-58747.herokuapp.com/
+Deployed application link: https://kendayao.github.io/Day-Planner/
 
 <img src="images/workdayplanner.png" width="400" height="300">
 
