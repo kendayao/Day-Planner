@@ -2,11 +2,12 @@
 
 ## Description
 
-This is a simple work day planner. This planner is based on a 9-5 workday. Languages used are HTML, CSS, Bootstrap, Jquery
+Day-Planner is web application that keeps track of daily work day activities. This planner is based on a 9-5 workday. 
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,7 +17,14 @@ This is a simple work day planner. This planner is based on a 9-5 workday. Langu
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
+## Technology
 
+- HTML
+- CSS
+- Boostrap
+- jQuery
+- Moment.js
+- Local Storage
 
 ## User Story
 
@@ -66,6 +74,8 @@ For any questions, please contact kendayao at kendayao@gmail.com
 ## Deployed Application URL
 
 Deployed application link: https://kendayao.github.io/Day-Planner/
+
+Video demo link: https://giphy.com/gifs/fxAjEBQzRbKxeH55le/fullscreen
 
 <img src="images/workdayplanner.png" width="400" height="300">
 
